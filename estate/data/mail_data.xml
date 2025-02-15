@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Modèle d'activité pour les propriétés vendues -->
+        <record id="mail_activity_property_sold" model="mail.activity.type">
+            <field name="name">Property Sold</field>
+            <field name="res_model">estate.property</field>
+            <field name="icon">fa-money</field>
+            <field name="delay_count">0</field>
+        </record>
+    </data>
+</odoo> 

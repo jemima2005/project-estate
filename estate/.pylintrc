@@ -1,0 +1,14 @@
+[MASTER]
+ignore=CVS
+ignore-patterns=
+persistent=yes
+load-plugins=
+
+# Ignore Odoo import errors
+ignored-modules=odoo,odoo.tools
+
+[MESSAGES CONTROL]
+# Disable specific warnings
+disable=R0903,  # too-few-public-methods
+        R0801,  # duplicate-code
+        E0401   # import-error

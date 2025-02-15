@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top menu item -->
+    <menuitem id="menu_real_estate_root"
+              name="Real Estate"
+              sequence="10"/>
+
+    <menuitem id="menu_real_estate_properties"
+              name="Properties"
+              parent="menu_real_estate_root"
+              action="action_estate_property"
+              sequence="10"/>
+
+    <menuitem id="menu_real_estate_settings"
+              name="Settings"
+              parent="menu_real_estate_root"
+              sequence="20"/>
+
+    <menuitem id="menu_real_estate_property_types"
+              name="Property Types"
+              parent="menu_real_estate_settings"
+              action="action_estate_property_type"
+              sequence="10"/>
+
+    <menuitem id="menu_real_estate_property_tags"
+              name="Property Tags"
+              parent="menu_real_estate_settings"
+              action="action_estate_property_tag"
+              sequence="20"/>
+
+    <menuitem id="menu_real_estate_reporting"
+              name="Reporting"
+              parent="menu_real_estate_root"
+              sequence="30"/>
+
+    <menuitem id="menu_real_estate_property_reports"
+              name="Property Reports"
+              parent="menu_real_estate_reporting"
+              action="estate_property_report"
+              sequence="10"/>
+</odoo> 

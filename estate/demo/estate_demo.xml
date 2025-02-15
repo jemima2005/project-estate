@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Property Types -->
+    <record id="property_type_house" model="estate.property.type">
+        <field name="name">House</field>
+        <field name="sequence">1</field>
+    </record>
+
+    <record id="property_type_apartment" model="estate.property.type">
+        <field name="name">Apartment</field>
+        <field name="sequence">2</field>
+    </record>
+
+    <!-- Property Tags -->
+    <record id="property_tag_cozy" model="estate.property.tag">
+        <field name="name">Cozy</field>
+        <field name="color">2</field>
+    </record>
+
+    <record id="property_tag_luxury" model="estate.property.tag">
+        <field name="name">Luxury</field>
+        <field name="color">4</field>
+    </record>
+
+    <!-- Properties -->
+    <record id="property_1" model="estate.property">
+        <field name="name">Beautiful House</field>
+        <field name="property_type_id" ref="property_type_house"/>
+        <field name="expected_price">300000</field>
+        <field name="living_area">200</field>
+        <field name="bedrooms">4</field>
+        <field name="garden">true</field>
+        <field name="garden_area">100</field>
+        <field name="garden_orientation">north</field>
+        <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury')])]"/>
+    </record>
+
+    <record id="property_2" model="estate.property">
+        <field name="name">Cozy Apartment</field>
+        <field name="property_type_id" ref="property_type_apartment"/>
+        <field name="expected_price">150000</field>
+        <field name="living_area">80</field>
+        <field name="bedrooms">2</field>
+        <field name="tag_ids" eval="[(6, 0, [ref('property_tag_cozy')])]"/>
+    </record>
+</odoo> 
